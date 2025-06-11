@@ -1,0 +1,4 @@
+{"level":"INFO","timestamp":"2025-06-11T17:43:29.680551","namespace":"mcp_agent.context","message":"Configuring logger with level: debug"}
+{"level":"INFO","timestamp":"2025-06-11T17:43:29.685264","namespace":"mcp_agent.streamlit_mcp_agent","message":"MCPAgent initialized","data":{"data":{"progress_action":"Running","target":"streamlit_mcp_agent","agent_name":"mcp_application_loop","session_id":"1aee0a47-c811-4741-9939-b94d273c1916"}}}
+{"level":"INFO","timestamp":"2025-06-11T17:43:44.649407","namespace":"mcp_agent.streamlit_mcp_agent","message":"MCPAgent cleanup","data":{"data":{"progress_action":"Finished","target":"streamlit_mcp_agent","agent_name":"mcp_application_loop"}}}
+{"level":"INFO","timestamp":"2025-06-11T17:43:46.134918","namespace":"mcp_agent.streamlit_mcp_agent","message":"MCPAgent cleanup","data":{"data":{"progress_action":"Finished","target":"streamlit_mcp_agent","agent_name":"mcp_application_loop"}}}

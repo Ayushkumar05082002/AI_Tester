@@ -1,0 +1,37 @@
+execution_engine: asyncio
+logger:
+  transports:
+  - console
+  - file
+  level: debug
+  progress_display: true
+  path_settings:
+    path_pattern: logs/mcp-agent-{unique_id}.jsonl
+    unique_id: timestamp
+    timestamp_format: '%Y%m%d_%H%M%S'
+mcp:
+  servers:
+    puppeteer:
+      command: npx
+      args:
+      - -y
+      - '@modelcontextprotocol/server-puppeteer'
+    excel:
+      command: npx
+      args:
+      - --yes
+      - '@negokaz/excel-mcp-server'
+      env:
+        EXCEL_MCP_PAGING_CELLS_LIMIT: '4000'
+    filesystem:
+      command: node
+      args:
+      - C:/Users/Ayush Singh/AppData/Roaming/npm/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js
+      - C:/Users/Ayush Singh/Desktop/mcp demo
+    playwright:
+      command: npx
+      args:
+      - -y
+      - '@executeautomation/playwright-mcp-server'
+openai:
+  default_model: gpt-4.1-2025-04-14
